@@ -1,8 +1,6 @@
 .DS_Store
 .idea
 .vscode
-.gitattributes
-.gitignore
 *.ai
 *.log
 *.pdf
