@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: technomart > catalog</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="up-header">
+        <p class="up-header__home">
+          <a href="index.html">техномарт</a>
+        </p>
+
+        <form action="https://echo.htmlacademy.ru/courses" method="get">
+          <button type="submit" class="up-header__search-button"></button>
+
+          <input class="up-header__search-field" type="text" name="search" placeholder="Поиск:">
+        </form>
+
+        <p class="up-header__bookmarks">
+          <!--class="up-header__bookmarks_in" добавляем класс при добавлении в избранное-->
+
+          <a href="#">Закладки: <span>0</span></a>
+        </p>
+
+        <p class="up-header__cart_in">
+          <!--class="up-header__bookmarks_in" добавляем класс при наполлнении корзины-->
+
+          <a href="#">Корзина: <span>10</span></a>
+        </p>
+
+        <button class="up-header__purchase" type="button">
+          Оформить заказ
+        </button>
+      </div>
+
+      <section class="header">
+        <h1>
+          Интернет-магазин<br>строительных материалов<br>и инструментов для
+          ремонта
+        </h1>
+
+        <address class="header__adress">
+          <a href="tel:+78005558628" class="header-adress__phone">+7 800 555-86-28</a>
+
+          <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+        </address>
+
+        <ul class="header__auth_logged">
+          <li><a href="#">Равшан Джамшутович</a></li>
+          <li><a href="#">log out</a></li>
+          <li><a href="#">Мои заказы</a></li>
+          <li><a href="#">Личный кабинет</a></li>
+        </ul>
+      </section>
+
+      <nav>
+        <ul class="header-nav">
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+
+          <li>
+            <a href="#">Компания</a>
+          </li>
+
+          <li>
+            <a>Каталог</a>
+          </li>
+
+          <li>
+            <a href="#">Новости</a>
+          </li>
+
+          <li>
+            <a href="#">Спецпредложения</a>
+          </li>
+
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">home</a></li>
+        <li><a href="#">каталог</a></li>
+        <li><a href="#">инструмент</a></li>
+        <li><a>перфораторы</a></li>
+      </ul>
+
+      <h2>перфораторы</h2>
+
+      <section>
+        <h2>фильтр:</h2>
+
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <h3>цена:</h3>
+          <img src="https://via.placeholder.com/150x100" alt="ползунок"><br><!-- заменить на ползунок -->
+          <input type="text" name="minPrice"> - 
+          <input type="text" name="maxPrice"><br>
+
+          <h3>производители:</h3>
+          <input type="checkbox" id="bosch" name="bosch" checked>
+          <label for="bosch">bosch</label><br>
+
+          <input type="checkbox" id="интерскол" name="интерскол">
+          <label for="интерскол">интерскол</label><br>
+
+          <input type="checkbox" id="makita" name="makita" checked>
+          <label for="makita">makita</label><br>
+
+          <input type="checkbox" id="dewalt" name="dewalt">
+          <label for="dewalt">dewalt</label><br>
+
+          <input type="checkbox" id="hitachi" name="hitachi">
+          <label for="hitachi">hitachi</label><br>
+
+          <h3>питание:</h3>
+          <input type="radio" id="wireless" name="wire">
+          <label for="wireless">аккумуляторные</label><br>
+
+          <input type="radio" id="wired" name="wire">
+          <label for="wired">сетевые</label><br>
+
+          <input type="submit" value="Показать">
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-top">
+        <a href="index.html" class="footer-top__home">техномарт</a>
+
+        <p class="footer-top__adress">
+          г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
+          <a href="tel:+78005558628">+7 800 555-86-28</a>
+        </p>
+
+        <ul class="footer-top__nav">
+          <li><a href="index.html">Компания</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a>Каталог</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Материалы</a></li>
+          <li><a href="#">Техника</a></li>
+          <li><a href="#">Инструмент</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-bottom__copyright">
+          © 2010–2021 Компания «Техномарт»<br>Все права защищены
+        </p>
+
+        <ul class="footer-bottom__social">
+          <li>VK</li>
+          <li>facebook</li>
+          <li>instagram</li>
+        </ul>
+
+        <p class="footer-bottom__mail-to">
+          Обратная связь:
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </p>
+
+        <p class="footer-bottom__proudly-made-by">
+          Разработано:
+          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        </p>
+      </div>
+    </footer>
+
+    <section class="pop-up__cart_added">
+      <h2>Товар добавлен в корзину!</h2>
+      <a href="#">оформить заказ</a>
+      <button type="button">продолжить покупки</button>
+      <button type="button">X</button>
+    </section>
+  </body>
+
+</html>
