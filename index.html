@@ -5,7 +5,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: technomart</title>
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap&subset=cyrillic,latin">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap&subset=cyrillic,latin">
 
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
@@ -16,12 +20,12 @@
   <body>
     <header>
       <div class="up-header">
-        <p class="up-header__home">
-          <a>техномарт</a>
-        </p>
+        <div class="up-header__home">
+          <a href="#"><img src="img/icons/logo-header.svg"></a>
+        </div>
 
         <form action="https://echo.htmlacademy.ru/courses" method="get">
-          <button type="submit" class="up-header__search-button"></button>
+          <button type="submit" class="up-header__search-button"><img src="img/icons/search.svg" width="17px" height="17px" alt="найти"></button>
 
           <input class="up-header__search-field" type="text" name="search" placeholder="Поиск:">
         </form>
@@ -52,7 +56,7 @@
         <address class="header__adress">
           <a href="tel:+78005558628" class="header-adress__phone">+7 800 555-86-28</a>
 
-          <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+          г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
         </address>
 
         <ul class="header__auth">
@@ -129,13 +133,13 @@
         <ul class="promo__slider">
           <li>
             <h3>Перфораторы</h3>
-            <p>Настоящие мужские игрушки</p>
+            Настоящие мужские игрушки
             <a href="catalog.html">открыть каталог</a>
           </li>
 
           <li>
             <h3>Дрели</h3>
-            <p>Соседям на радость!</p>
+            Соседям на радость!
             <a href="catalog.html">открыть каталог</a>
           </li>
         </ul>

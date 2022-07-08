@@ -1,1 +1,97 @@
-	
+body {
+  font-family: "PT Sans", "Verdana", sans-serif;
+}	
+
+header {
+  font-family: "Cuprum", "Verdana", sans-serif;
+  height: 320px;
+  background-color: #F1F5F7;
+}
+
+h1 {
+  font-style: italic;
+  font-size: 16px;
+  font-size: 16px;
+  line-height: 23px;
+  color: #EE3643;
+}
+
+.promo {
+  font-family: "Cuprum", "Verdana", sans-serif;
+}
+
+h2,
+h3,
+button,
+a,
+ul {
+  font-family: "Cuprum", "Verdana", sans-serif;
+  color: green;
+}
+
+.goods__item>a,
+.hot-goods__item>a {
+  font-family: "PT Sans", "Verdana", sans-serif;
+  color: red;
+}
+
+.up-header {
+  width: 1200px;
+  height: 42px;
+  background-color: #293449;
+  display: grid;
+  grid-template-columns: 350px 290px 156px 124px 280px;
+}
+
+.up-header__home {
+  height: 47px;
+  width: 220px;
+  background-color: #EE3643;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  justify-self: end;
+}
+
+.up-header__home>a {
+  padding: 12px 56px 13px;
+  display: block;
+  align-self: start;
+}
+
+.up-header>form {
+  width: 290px;
+  height: 42px;
+  display: grid;
+  grid-template-columns: 42px 248px;
+}
+
+.up-header__search-button {
+  border: none;
+  width: 17px;
+  height: 17px;
+  padding: 0;
+  margin: 12px 8px 13px 17px;
+  background-color: rgba(0, 0, 0, 0.0);
+  opacity: 0.3;
+}
+
+.up-header__search-field {
+  height: 24px;
+  width: 240px;
+  padding: 0;
+  border: none;
+  background-color: #293449;
+  align-self: center;
+}
+
+.up-header__search-field::placeholder {
+  color: white;
+}
+
+.up-header__purchase {
+  height: 42px;
+  width: 150px;
+  border: 0;
+  padding: 0;
+  background-color: #63A63E;
+  color: white;
+}
