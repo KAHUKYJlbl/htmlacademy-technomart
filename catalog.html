@@ -20,27 +20,27 @@
   <body>
     <header>
       <div class="up-header">
-        <p class="up-header__home">
-          <a href="index.html">техномарт</a>
-        </p>
+        <div class="up-header__home">
+          <a href="index.html"><img src="img/icons/logo-header.svg" width="108" height="18" alt="логотип техномарт"></a>
+        </div>
 
         <form action="https://echo.htmlacademy.ru/courses" method="get">
-          <button type="submit" class="up-header__search-button"></button>
+          <button type="submit" class="up-header__search-button"><img src="img/icons/search.svg" width="17" height="17" alt="найти"></button>
 
           <input class="up-header__search-field" type="text" name="search" placeholder="Поиск:">
         </form>
 
-        <p class="up-header__bookmarks">
+        <div class="up-header__bookmarks">
           <!--class="up-header__bookmarks_in" добавляем класс при добавлении в избранное-->
 
           <a href="#">Закладки: <span>0</span></a>
-        </p>
+        </div>
 
-        <p class="up-header__cart_in">
+        <div class="up-header__cart">
           <!--class="up-header__bookmarks_in" добавляем класс при наполлнении корзины-->
 
           <a href="#">Корзина: <span>10</span></a>
-        </p>
+        </div>
 
         <button class="up-header__purchase" type="button">
           Оформить заказ
@@ -110,11 +110,11 @@
 
       <h2>перфораторы</h2>
 
-      <section>
+      <section class="filter">
         <h3>фильтр:</h3>
 
         <form action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset>
+          <fieldset class="filter__price">
             <legend>цена:</legend>
             <img src="https://via.placeholder.com/150x100" alt="ползунок"><br>
             <!-- заменить на ползунок -->
@@ -122,7 +122,7 @@
             <input type="text" name="maxPrice"><br>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="filter__manufacturers">
             <legend>производители:</legend>
             <input type="checkbox" id="bosch" name="bosch" checked>
             <label for="bosch">bosch</label><br>
@@ -140,7 +140,7 @@
             <label for="hitachi">hitachi</label><br>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="filter__wire">
             <legend>питание:</legend>
             <input type="radio" id="wireless" name="wire" value="wireless">
             <label for="wireless">аккумуляторные</label><br>
@@ -149,7 +149,7 @@
             <label for="wired">сетевые</label><br>
           </fieldset>
 
-          <input type="submit" value="Показать">
+          <button type="submit">показать</button>
         </form>
       </section>
 
@@ -319,7 +319,7 @@
       <h3>Товар добавлен в корзину!</h3>
       <a href="#">оформить заказ</a>
       <button type="button">продолжить покупки</button>
-      <button type="button">X</button>
+      <button type="button"><img src="img/icons/x-close.svg" width="21" height="21" alt="закрыть"></button>
     </section>
   </body>
 
