@@ -25,19 +25,21 @@
         </div>
 
         <form action="https://echo.htmlacademy.ru/courses" method="get">
-          <button type="submit" class="up-header__search-button"><img src="img/icons/search.svg" width="17" height="17" alt="найти"></button>
-
           <input class="up-header__search-field" type="text" name="search" placeholder="Поиск:">
+
+          <button class="up-header__search-button" type="submit" tabindex="-1">
+            <img src="img/icons/search.svg">
+          </button>
         </form>
 
         <div class="up-header__bookmarks">
           <!--class="up-header__bookmarks_in" добавляем класс при добавлении в избранное-->
-          <a href="#">Закладки: <span>0</span></a>
+          <a href="#"><img src="img/icons/bookmark.svg" height="16" width="14" alt="закладки">Закладки: <span>0</span></a>
         </div>
 
         <div class="up-header__cart">
           <!--class="up-header__bookmarks_in" добавляем класс при наполлнении корзины-->
-          <a href="#">Корзина: <span>0</span></a>
+          <a href="#"><img src="img/icons/cart.svg" height="15" width="15" alt="корзина">Корзина: <span>0</span></a>
         </div>
 
         <button class="up-header__purchase" type="button">
@@ -59,7 +61,7 @@
 
         <ul class="header__auth_logged">
           <li><a href="#">Равшан Джамшутович</a></li>
-          <li><a href="#">log out</a></li>
+          <li><a href="#"><img src="img/icons/logout.svg" alt=""></a></li>
           <li><a href="#">Мои заказы</a></li>
           <li><a href="#">Личный кабинет</a></li>
         </ul>
