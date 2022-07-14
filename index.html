@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap&subset=cyrillic,latin">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap&subset=cyrillic,latin">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&subset=cyrillic,latin">
 
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
@@ -26,7 +26,7 @@
 
         <form action="https://echo.htmlacademy.ru/courses" method="get">
           <input class="up-header__search-field" type="text" name="search" id="search" placeholder="Поиск:">
-          
+
           <button class="up-header__search-button" type="submit" tabindex="-1">
             <img src="img/icons/search.svg">
           </button>
@@ -100,30 +100,31 @@
 
     <main>
       <section class="promo">
-        <h2>промо</h2>
+        <h2 class="visually-hidden">промо</h2>
         <!-- спрятать -->
 
-        <div class="promo__item">
+        <div class="promo__item
+                    promo__item_yellow promo__item_new">
           <h3>Материалы</h3>
           <a href="#">На любой вкус</a>
         </div>
 
-        <div class="promo__item">
+        <div class="promo__item promo__item_blue">
           <h3>Инструмент</h3>
           <a href="#">На все случаи</a>
         </div>
 
-        <div class="promo__item">
+        <div class="promo__item promo__item_purple">
           <h3>Техника</h3>
           <a href="#">Для стройки</a>
         </div>
 
-        <div class="promo__item">
+        <div class="promo__item promo__item_green">
           <h3>Скидки 50%</h3>
           <a href="#">На 350 товаров</a>
         </div>
 
-        <div class="promo__item">
+        <div class="promo__item promo__item_yellow">
           <h3>Доставка</h3>
           <a href="#">Бесплатно</a>
         </div>
@@ -154,38 +155,46 @@
 
         <ul>
           <li class="hot-goods__item">
+            <button class="in-cart">купить</button>
+            <button class="in-bookmarks">в закладки</button>
             <a href="#">
               <img src="img/goods/bosch/bfg9000.jpg" height="164" width="184" alt="Большой перфоратор">
               <h4>Перфоратор BOSCH<br>BFG 9000</h4>
-              <span>32500 Р.</span><br>
-              25500 Р.
+              <span>32500 Р.</span>
+              <div class="price">25500 Р.</div>
             </a>
           </li>
 
           <li class="hot-goods__item">
+            <button class="in-cart">купить</button>
+            <button class="in-bookmarks">в закладки</button>
             <a href="#">
               <img src="img/goods/bosch/bfg3000.jpg" height="164" width="184" alt="Небольшой перфоратор">
               <h4>Перфоратор BOSCH<br>BFG 3000</h4>
-              <span>22500 Р.</span><br>
-              15500 Р.
+              <span>22500 Р.</span>
+              <div class="price">15500 Р.</div>
             </a>
           </li>
 
           <li class="hot-goods__item">
+            <button class="in-cart">купить</button>
+            <button class="in-bookmarks">в закладки</button>
             <a href="#">
               <img src="img/goods/bosch/bfg6000.jpg" height="164" width="184" alt="Средний перфоратор">
               <h4>Перфоратор BOSCH<br>BFG 6000</h4>
-              <span>30500 Р.</span><br>
-              25500 Р.
+              <span>30500 Р.</span>
+              <div class="price">25500 Р.</div>
             </a>
           </li>
 
           <li class="hot-goods__item">
+            <button class="in-cart">купить</button>
+            <button class="in-bookmarks">в закладки</button>
             <a href="#">
               <img src="img/goods/bosch/bfg2000.jpg" height="164" width="184" alt="Маленький перфоратор">
               <h4>Перфоратор BOSCH<br>BFG 2000</h4>
-              <span>22500 Р.</span><br>
-              25500 Р.
+              <span>22500 Р.</span>
+              <div class="price">25500 Р.</div>
             </a>
           </li>
         </ul>
@@ -202,36 +211,43 @@
               <img src="img/goods/bosch/logo.jpg" height="37" width="126" alt="логотип bosch">
             </a>
           </li>
+
           <li class="hot-manufacturers__item">
             <a href="#">
               <img src="img/goods/makita/logo.jpg" height="40" width="123" alt="логотип makita">
             </a>
           </li>
+
           <li class="hot-manufacturers__item">
             <a href="#">
               <img src="img/goods/dewalt/logo.jpg" height="44" width="146" alt="логотип dewalt">
             </a>
           </li>
+
           <li class="hot-manufacturers__item">
             <a href="#">
               <img src="img/goods/interskol/logo.jpg" height="76" width="200" alt="логотип интерскол">
             </a>
           </li>
+
           <li class="hot-manufacturers__item">
             <a href="#">
               <img src="img/goods/hitachi/logo.jpg" height="31" width="169" alt="логотип hitachi">
             </a>
           </li>
+
           <li class="hot-manufacturers__item">
             <a href="#">
               <img src="img/goods/lg/logo.jpg" height="73" width="121" alt="логотип lg">
             </a>
           </li>
+
           <li class="hot-manufacturers__item">
             <a href="#">
               <img src="img/goods/aeg/logo.jpg" height="96" width="151" alt="логотип aeg">
             </a>
           </li>
+
           <li class="hot-manufacturers__item">
             <a href="#">
               <img src="img/goods/metabo/logo.jpg" height="69" width="204" alt="логотип metabo">
