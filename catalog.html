@@ -102,16 +102,20 @@
 
     <main>
       <ul class="breadcrumbs">
-        <li><a href="index.html">home</a></li>
+        <li><a href="index.html"><img src="img/icons/home.svg" alt="home" height="12" width="14"></a></li>
         <li><a href="#">каталог</a></li>
         <li><a href="#">инструмент</a></li>
         <li><a>перфораторы</a></li>
       </ul>
 
-      <h2>перфораторы</h2>
+      <div class="catalog-header">
+        <h2>перфораторы</h2>
+      </div>
 
       <section class="filter">
-        <h3>фильтр:</h3>
+        <div class="filter__header">
+          <h3>фильтр:</h3>
+        </div>
 
         <form action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="filter__price">
@@ -153,10 +157,10 @@
         </form>
       </section>
 
-      <section>
+      <section class="sort">
         <h3>сортировка:</h3>
 
-        <ul class="sort">
+        <ul class="sort__list">
           <li><button type="button">по цене</button></li>
           <li><button type="button">по типу</button></li>
           <li><button type="button">по функционалу</button></li>
@@ -270,15 +274,15 @@
           </li>
         </ul>
 
-        <ul>
-          <li><a>1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">следующая</a></li>
+        <ul class="goods__pagination">
+          <li class="goods__pagination-item_current"><button type="button">1</button></li>
+          <li><button type="button">2</button></li>
+          <li><button type="button">3</button></li>
+          <li><button type="button">следующая</button></li>
         </ul>
       </section>
 
-      <article>
+      <article class="article-perf">
         <h2>пара слов о перфораторах</h2>
         Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
       </article>
@@ -337,7 +341,7 @@
       <h3>Товар добавлен в корзину!</h3>
       <a href="#">оформить заказ</a>
       <button type="button">продолжить покупки</button>
-      <button type="button"><img src="img/icons/x-close.svg" width="21" height="21" alt="закрыть"></button>
+      <button class="x-button" type="button"><img src="img/icons/x-close.svg" width="21" height="21" alt="закрыть"></button>
     </section>
   </body>
 
