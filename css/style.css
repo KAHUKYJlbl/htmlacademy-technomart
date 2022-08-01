@@ -101,6 +101,7 @@ img {
   padding: 0;
   margin: 0;;
   display: flex;
+  flex-wrap: wrap;
   gap: 17px;
 
   font-family: 'PT Sans';
@@ -575,16 +576,26 @@ h1 {
 .header-nav {
   height: 60px;
   margin: 0;
-  padding: 0 50px;
+  padding: 0;
   list-style: none;
 
   display: flex;
-  justify-content:space-between;
+  /* justify-content: space-around; */
   align-items: center;
 }
 
+.header-nav li {
+  width: 100%;
+}
+
+/* .header-nav li:first-child a {
+  padding-left: 55px;
+} */
+
 .header-nav a {
-  padding: 19px 0 20px;
+  display: block;
+  padding: 18px 30px;
+  text-align: center;
   color: var(--letter-white);
 }
 
@@ -621,27 +632,65 @@ h1 {
   gap: 20px;
 }
 
-.promo__item_yellow {
+.promo__item {
+  padding-top: 20px;
+  padding-left: 23px;
+}
+
+.promo__item_materials {
   background-color: var(--promo-yellow);
+  background-image: url(../img/promo/materials.svg);
+  background-repeat: no-repeat;
+  background-position: 85% 55%;
 }
 
-.promo__item_blue {
+.promo__item_tools {
   background-color: var(--promo-blue);
+  background-image: url(../img/promo/tools.svg);
+  background-repeat: no-repeat;
+  background-position: 85% 55%;
 }
 
-.promo__item_green {
+.promo__item_sale50 {
   background-color: var(--promo-green);
+  background-image: url(../img/promo/sale50.svg);
+  background-repeat: no-repeat;
+  background-position: 85% 55%;
 }
 
-.promo__item_purple {
+.promo__item_machines {
   background-color: var(--promo-purple);
+  background-image: url(../img/promo/technics.svg);
+  background-repeat: no-repeat;
+  background-position: 85% 55%;
 }
 
-/* .promo__item_new {
-  
-} */
+.promo__item_shipping {
+  background-color: var(--promo-yellow);
+  background-image: url(../img/promo/shipping.svg);
+  background-repeat: no-repeat;
+  background-position: 85% 55%;
+}
+
+.promo__item_new::after {
+  display: block;
+  height: 123px;
+  width: 300px;
+  position: relative;
+  left: -23px;
+  top: -102px;
+  pointer-events: none;
+
+  content: "";
+  background-image: url(../img/new.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
 
 .promo__item h3 {
+  margin: 0;
+  margin-bottom: 14px;
+
   font-family: 'Cuprum';
   font-style: normal;
   font-weight: 700;
@@ -651,6 +700,12 @@ h1 {
 }
 
 .promo__item a {
+  display: table-cell;
+  height: 38px;
+  width: 135px;
+  text-align: center;
+  vertical-align: middle;
+
   font-family: 'Cuprum';
   font-style: normal;
   font-weight: 400;
@@ -1308,14 +1363,15 @@ h1 {
 
 .last-one {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: start;
-  gap: 50px;
+  justify-content: space-between;
 }
 
 .footer-bottom__mail-to,
 .footer-bottom__proudly-made-by {
   margin: 0;
+  width: min-content;
 }
 
 .footer-bottom__mail-to a,
