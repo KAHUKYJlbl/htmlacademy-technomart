@@ -580,22 +580,27 @@ h1 {
   list-style: none;
 
   display: flex;
-  /* justify-content: space-around; */
-  align-items: center;
+  justify-content: space-evenly;
 }
 
 .header-nav li {
-  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
-/* .header-nav li:first-child a {
-  padding-left: 55px;
-} */
+.header-nav__item:first-child a {
+  padding-left: 25px;
+}
+
+.header-nav__item:last-child a {
+  padding-right: 25px;
+}
 
 .header-nav a {
-  display: block;
-  padding: 18px 30px;
-  text-align: center;
+  width: 100%;
+  line-height: 60px;
   color: var(--letter-white);
 }
 
