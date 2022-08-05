@@ -861,9 +861,9 @@ h1 {
 
 .hot-goods__item,
 .goods__item {
-  height: 314px;
-  width: 216px;
-
+  /* height: 314px; */
+  width: 218px;
+  
   border: 1px solid var(--basic-grey);
   text-align: center;
 }
@@ -873,8 +873,26 @@ h1 {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
+.hot-goods__item a,
+.goods__item a {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hot-goods__item img,
+.goods__item img {
+  margin-top: 22px;
+  margin-left: auto;
+  margin-bottom: 28px;
+  margin-right: auto;
+}
+
 .hot-goods__item h4,
 .goods__item h4 {
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: 7px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -886,6 +904,8 @@ h1 {
 
 .hot-goods__item span,
 .goods__item span {
+  margin-bottom: 13px;
+
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -896,21 +916,44 @@ h1 {
 }
 
 .price {
+  margin-bottom: 21px;
+
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 38px;
   color: var(--letter-white);
 
   background-image: url(../img/icons/price.svg);
   background-repeat: no-repeat;
+  background-position: 45px;
+}
+
+.buttons-hidden {
+  display: none;
+}
+
+.hot-goods__item:hover .buttons-hidden,
+.goods__item:hover .buttons-hidden {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 216px;
+  height: 160px;
+
+  background-color: var(--letter-white);
 }
 
 .in-cart {
   width: 135px;
   height: 38px;
   padding: 0;
+  padding-left: 5px;
+  margin-top: 38px;
 
   font-family: 'Cuprum';
   font-style: normal;
@@ -923,6 +966,7 @@ h1 {
   border: none;
   border-radius: 2px;
   background-image: url(../img/icons/cart-opacity.svg);
+  background-position: 30px 10px;
   background-repeat: no-repeat;
   background-color: var(--button-green);
   box-shadow: inset 0px -3px 0px #367315;
@@ -941,6 +985,7 @@ h1 {
   width: 135px;
   height: 38px;
   padding: 0;
+  margin-bottom: auto;
 
   font-family: 'Cuprum';
   font-style: normal;
@@ -1426,7 +1471,7 @@ h1 {
 .catalog-page {
   display: grid;
   grid-template-columns: 220px 700px;
-  grid-template-rows: 38px 1010px 38px;
+  grid-template-rows: 38px 1fr 38px;
   column-gap: 20px;
   row-gap: 28px;
   margin-bottom: 39px;
