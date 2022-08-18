@@ -140,29 +140,47 @@
 
             <fieldset class="filter__manufacturers">
               <legend>производители:</legend>
-              <input type="checkbox" id="bosch" name="bosch" checked>
-              <label for="bosch">bosch</label><br>
+              <div class="filter__list">
+                <div class="filter__item filter__item-checkbox">
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" id="bosch" name="bosch" checked>
+                  <label for="bosch">bosch</label>
+                </div>
 
-              <input type="checkbox" id="интерскол" name="интерскол">
-              <label for="интерскол">интерскол</label><br>
+                <div class="filter__item filter__item-checkbox">
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" id="интерскол" name="интерскол" disabled>
+                  <label for="интерскол">интерскол</label>
+                </div>
 
-              <input type="checkbox" id="makita" name="makita" checked>
-              <label for="makita">makita</label><br>
+                <div class="filter__item filter__item-checkbox">
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" id="makita" name="makita" checked disabled>
+                  <label for="makita">makita</label>
+                </div>
 
-              <input type="checkbox" id="dewalt" name="dewalt">
-              <label for="dewalt">dewalt</label><br>
+                <div class="filter__item filter__item-checkbox">
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" id="dewalt" name="dewalt">
+                  <label for="dewalt">dewalt</label>
+                </div>
 
-              <input type="checkbox" id="hitachi" name="hitachi">
-              <label for="hitachi">hitachi</label><br>
+                <div class="filter__item filter__item-checkbox">
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" id="hitachi" name="hitachi">
+                  <label for="hitachi">hitachi</label>
+                </div>
+              </div>
             </fieldset>
 
             <fieldset class="filter__wire">
               <legend>питание:</legend>
-              <input type="radio" id="wireless" name="wire" value="wireless">
-              <label for="wireless">аккумуляторные</label><br>
+              <div class="filter__list">
+                <div class="filter__item filter__item-radio">
+                  <input class="filter-input-radio visually-hidden" type="radio" id="wireless" name="wire" value="wireless" checked>
+                  <label for="wireless">аккумуляторные</label>
+                </div>
 
-              <input type="radio" id="wired" name="wire" value="wired">
-              <label for="wired">сетевые</label><br>
+                <div class="filter__item filter__item-radio">
+                  <input class="filter-input-radio visually-hidden" type="radio" id="wired" name="wire" value="wired">
+                  <label for="wired">сетевые</label>
+                </div>
+              </div>
             </fieldset>
 
             <button type="submit">показать</button>
@@ -372,7 +390,7 @@
       </div>
     </footer>
 
-    <section class="pop-up__cart_added">
+    <section class="pop-up pop-up__cart_added">
       <h3>Товар добавлен в корзину!</h3>
       <a href="#">оформить заказ</a>
       <button type="button">продолжить покупки</button>
