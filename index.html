@@ -140,7 +140,33 @@
               <a href="catalog.html">открыть каталог</a>
             </li>
 
+            <li class="promo__slider-item">
+              <div class="slide-header">
+                <h3>Перфораторы</h3>
+                Настоящие мужские игрушки
+              </div>
+              <a href="catalog.html">открыть каталог</a>
+            </li>
+
+            <li class="promo__slider-item">
+              <div class="slide-header">
+                <h3>Перфораторы</h3>
+                Настоящие мужские игрушки
+              </div>
+              <img src="img/goods/dewalt/logo.jpg" alt="">
+              <a href="catalog.html">открыть каталог</a>
+            </li>
+
             <li class="promo__slider-item slide-current">
+              <div class="slide-header">
+                <h3>Перфораторы</h3>
+                Настоящие мужские игрушки
+              </div>
+              <img src="img/goods/bosch/logo.jpg" alt="">
+              <a href="catalog.html">открыть каталог</a>
+            </li>
+
+            <li class="promo__slider-item">
               <div class="slide-header">
                 <h3>Дрели</h3>
                 Соседям на радость!
@@ -150,13 +176,16 @@
           </ul>
 
           <div class="slider-controls">
-            <button class="slider-controls__button slider-controls__button_current" type="button" aria-label="Первый слайд"></button>
+            <button class="slider-controls__button" type="button" aria-label="Первый слайд"></button>
+            <button class="slider-controls__button" type="button" aria-label="Второй слайд"></button>
+            <button class="slider-controls__button" type="button" aria-label="Второй слайд"></button>
+            <button class="slider-controls__button" type="button" aria-label="Второй слайд"></button>
             <button class="slider-controls__button" type="button" aria-label="Второй слайд"></button>
           </div>
 
-          <button type="button"><img src="img/icons/left-l.svg" width="22" height="40" alt="предыдущий слайд"></button>
+          <button class="slider-controls__button-backward" type="button"><img src="img/icons/left-l.svg" width="22" height="40" alt="предыдущий слайд"></button>
 
-          <button type="button"><img src="img/icons/right-l.svg" width="22" height="40" alt="следующий слайд"></button>
+          <button class="slider-controls__button-forward" type="button"><img src="img/icons/right-l.svg" width="22" height="40" alt="следующий слайд"></button>
         </div>
       </section>
 
@@ -305,7 +334,7 @@
             </li>
           </ul>
 
-          <div class="services__item services__item_delivery services__item_current">
+          <div class="services__item services__item_delivery">
             <h3>Доставка</h3>
             Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!
           </div>
@@ -344,8 +373,8 @@
         <div class="about__pick-up">
           <h3>контакты</h3>
           <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-          <a href="#"><img src="img/map/map-s.jpg" width="300" height="158" alt="карта"></a>
-          <button type="button">заблудились? напишите нам!</button>
+          <a class="pop-up__map-button" href="#"><img src="img/map/map-s.jpg" width="300" height="158" alt="карта"></a>
+          <button class="pop-up__message-button" type="button">заблудились? напишите нам!</button>
         </div>
       </section>
     </main>
@@ -420,14 +449,16 @@
         <button type="submit">Отправить</button>
       </form>
 
-      <button class="x-button" type="button"><img src="img/icons/x-close.svg" width="21" height="21" alt="закрыть"></button>
+      <button class="x-button pop-up__message-x-button" type="button"><img src="img/icons/x-close.svg" width="21" height="21" alt="закрыть"></button>
     </section>
 
     <section class="pop-up pop-up__map">
       <h2 class="visually-hidden">карта</h2>
       <img src="img/map/map-l.jpg" width="940" height="450" alt="карта">
-      <button class="x-button" type="button"><img src="img/icons/x-close.svg" width="21" height="21" alt="закрыть"></button>
+      <button class="x-button pop-up__map-x-button" type="button"><img src="img/icons/x-close.svg" width="21" height="21" alt="закрыть"></button>
     </section>
+
+    <script src="js/script-index.js"></script>
   </body>
 
 </html>
